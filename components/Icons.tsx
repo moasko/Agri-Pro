@@ -108,3 +108,29 @@ export const MagicLeafIcon = ({ className = 'w-16 h-16' }: { className?: string 
         <path d="M9.41 7C11.92 7 14 9.08 14 11.59C14 12.9 12.9 14 11.59 14C9.08 14 7 11.92 7 9.41C7 8.1 8.1 7 9.41 7Z" fill="currentColor"/>
     </svg>
 );
+
+export const SproutIcon = ({ className = 'w-6 h-6' }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 13a4 4 0 100-8 4 4 0 000 8z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18" />
+    </svg>
+);
+
+export const GrowthIcon = ({ className = 'w-6 h-6' }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21V4" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 13a4 4 0 100-8 4 4 0 000 8z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8h-3.5a2.5 2.5 0 100 5h7a2.5 2.5 0 110-5H12z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18" />
+    </svg>
+);
+
+export const FloweringIcon = ({ className = 'w-6 h-6' }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21V9" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9a4 4 0 100-8 4 4 0 000 8z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 14h-3.5a2.5 2.5 0 100 5h7a2.5 2.5 0 110-5H12z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18" />
+    </svg>
+);

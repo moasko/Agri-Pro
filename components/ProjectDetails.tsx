@@ -5,6 +5,7 @@ import { WaterIcon, HarvestIcon, LaborIcon, PlantIcon, CalendarIcon, SoilIcon, I
 import FieldMap from './FieldMap';
 import TaskTimeline from './TaskTimeline';
 import WeatherForecast from './WeatherForecast';
+import GrowthTracker from './GrowthTracker';
 
 interface ProjectDetailsProps {
     project: Project;
@@ -155,6 +156,12 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                             <InfoCard title="Main d'oeuvre" value={`${totalLaborHours.toLocaleString('fr-FR')} h`} icon={LaborIcon} color="yellow" />
                             <InfoCard title="Besoins en Eau" value={`${totalWater.toLocaleString('fr-FR')} m³`} icon={WaterIcon} color="cyan" />
                         </div>
+                        
+                        <GrowthTracker 
+                            creationDate={project.creationDate} 
+                            totalDays={calculatedData.estimatedGrowthTimeDays}
+                        />
+
                         <div>
                              {!location && !locationError && (
                                 <div className="p-4 text-center bg-gray-100 rounded-lg">
