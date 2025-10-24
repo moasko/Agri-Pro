@@ -1,0 +1,7 @@
+{
+  "name": "Agri-Manager Africa",
+  "description": "A comprehensive agricultural field management application tailored for African crops. It helps farmers create and manage agricultural projects with predefined parameters and AI-powered calculations for yield, labor, and task scheduling, designed with an intuitive, icon-based interface for accessibility.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
